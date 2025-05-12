@@ -2,7 +2,7 @@ from pydantic import BaseModel, HttpUrl
 
 class DocumentRequest(BaseModel):
     url: HttpUrl
-    embedding_model: str = "openai"
+    embedding_model: str = "openai" # TODO: use third-party api
 
 class ChatRequest(BaseModel):
     query: str
